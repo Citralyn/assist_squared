@@ -7,23 +7,28 @@
 body {
     min-height: 100vh;
     background: 
-    linear-gradient(45deg, #1a73e8 , #34a853 );
-    font-family: 'Zilla Slab', sans-serif;
-    display: block;
+        linear-gradient(217deg, rgb(243 8 102 / 80%), rgb(255 0 0 / 0%) 70.71%),
+        linear-gradient(130deg, rgb(23 32 90 / 80%), rgb(255 0 0 / 0%) 70.71%),
+        linear-gradient(127deg, rgb(23 32 90 / 80%), rgb(0 255 0 / 0%) 70.71%),
+        linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
  
 h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 2.5rem;
-    color: black;
+    color: white;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 p { 
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1.2rem;
-    color: black;
+    color: white;
     margin-bottom: 2rem;
     line-height:1.6
 }
@@ -41,7 +46,7 @@ p {
 }
 
 .container{
-    text-align: left;
+    text-align: center;
     padding: 2rem
 }
 
@@ -79,6 +84,8 @@ p {
 .card_folder{
     display: flex;
     gap: 2rem;
+    align-items: center;
+    justify-items: center;
     justify-content: center;
 }
 
@@ -88,6 +95,7 @@ p {
     height: 100%;
     transition: all 0.8s ease;
     transform-style: preserve-3d;
+    align-items: center;
 }
 
 .card_front {
@@ -99,7 +107,7 @@ p {
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
-    background: #ffc728;
+    background: #383C87;
     color: #000;
     transform: rotateY(0deg);
     /* justify-content: center; */
@@ -117,11 +125,12 @@ p {
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
-    background: #1a73e8;
+    background: #5248A9;
     color: #000;
     transform: rotateY(180deg);
     padding: 20px;
     justify-content: left;
+    text-align: left;
 }
 
 .card_default:hover .card_container{
@@ -152,6 +161,14 @@ p {
 .exit_button:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.anteater {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
