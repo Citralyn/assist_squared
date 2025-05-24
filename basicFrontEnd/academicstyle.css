@@ -12,8 +12,34 @@ body {
     justify-content: center;
     align-items: center;
 }
+ 
+h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
 
-.
+p { 
+    font-size: 1.2.5rem;
+    color: black;
+    margin-bottom: 2rem;
+    line-height:1.6
+}
+
+.container{
+    text-align: left;
+    padding: 2rem
+}
+
+.content{
+    background: pink;
+    width: 90%;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 32px 32px black;
+    max-width: 600px;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
