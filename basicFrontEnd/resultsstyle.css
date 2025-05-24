@@ -19,10 +19,12 @@ body {
 h1 {
     font-size: 4rem;
     padding-bottom: 0.5rem;
+    text-align: center;
 }
 
-p {
+.header-desc {
     font-size: 1rem;
+    text-align: center;
 }
 
 .section-heading {
