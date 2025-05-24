@@ -41,6 +41,57 @@ p {
     max-width: 600px;
 }
 
+.card_default{
+    position: relative;
+    top: 0;
+    left: 0;
+    width:250px;
+    height: 320px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.card_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.card_front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+    transform: rotateY(0deg);
+}
+
+.card_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #1a73e8;
+    color: #000;
+    transform: rotateY(180deg);
+}
+
+.card_default:hover .card_container{
+    transform: rotateY(180deg);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .content {
