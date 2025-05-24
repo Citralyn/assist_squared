@@ -6,54 +6,63 @@
 
 body {
     min-height: 100vh;
-    /* background: linear-gradient(135deg, #17205A, #C74CBA, #DD7944, #5E9EC2); */
     background:
     linear-gradient(217deg, rgb(243 8 102 / 80%), rgb(255 0 0 / 0%) 70.71%),
     linear-gradient(130deg, rgb(23 32 90 / 80%), rgb(255 0 0 / 0%) 70.71%),
     linear-gradient(127deg, rgb(23 32 90 / 80%), rgb(0 255 0 / 0%) 70.71%),
     linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
     font-family: 'Be Vietnam Pro', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color:white;
+    margin: 8rem 4rem;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-bottom: 0.5rem;
 }
 
 p {
-    color: white;
     font-size: 1rem;
-    line-height: 1.6;
 }
 
-.container {
+.section-heading {
     text-align: center;
-    padding: 2rem;
+}
+
+.section-container {
     display: flex;
-    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+.section {
+    padding-bottom: 1rem;
+    width: 456px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.card-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.content {
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 90%;
+.card {
+    border: 1px solid #FFF;
+    background-color: #04124255;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
 }
 
-
-.welcome-text {
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
+.heading {
+    padding-bottom: 2rem;
 }
 
-.hero-text {
-    color: white;
-    font-size: 6rem;
-    font-weight: 700;
- }
-
-.start-button {
+.back-button {
     background-color: #0048FF;
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -70,17 +79,17 @@ p {
     align-items: center;
 }
 
-.start-button p {
-    font-size: 2rem;
+.back-button p {
+    font-size: 1rem;
 }
 
-.start-button:hover {
+.back-button:hover {
     background-color: #0032D7;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.start-button:active {
+.back-button:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
