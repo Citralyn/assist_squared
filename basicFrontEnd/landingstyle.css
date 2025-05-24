@@ -54,7 +54,7 @@ p {
 }
 
 .start-button {
-    background-color: #47ACFF;
+    background-color: #0048FF;
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 500;
@@ -75,7 +75,7 @@ p {
 }
 
 .start-button:hover {
-    background-color: #2E82EF;
+    background-color: #0032D7;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
