@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function moveLeft() {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        currentIndex = (currentIndex - 1 ) % cards.length;
         updateCarousel();
     }
 

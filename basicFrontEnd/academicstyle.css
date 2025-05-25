@@ -12,7 +12,7 @@ body {
         linear-gradient(127deg, rgb(23 32 90 / 80%), rgb(0 255 0 / 0%) 70.71%),
         linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
     font-family: 'Be Vietnam Pro', sans-serif;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
@@ -54,10 +54,11 @@ p {
     margin-top: 100px;
     padding: 20px;
     text-align: center;
-    align-items: left;
+    align-items: center;
     left: 20px;
     padding: 20px;
     line-height: 1;
+
 }
 
 .content{
@@ -137,30 +138,37 @@ p {
     transform: rotateY(180deg);
 }
 
-.exit_button{
-    background-color: blue;
+.next_button{
+    background-color: #8f84bc;
     color: white;
-    border: none;
-    margin-top: 2rem;
-    padding: 1 rem 2 rem;
-    font-size: 1.2 rem;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 500;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    margin: 1px;
+    text-align: center;
 }
 
-.exit_button:hover {
-    background-color: #0032D7;
+.next_button:hover {
+    background-color: #8f84bc;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.exit_button:active {
+.next_button:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.whole_page_align_center{
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 
 .anteater {

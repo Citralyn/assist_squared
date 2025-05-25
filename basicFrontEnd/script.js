@@ -1,13 +1,5 @@
-let counter = 0; // variable of Number type that keeps track of # of times button is pressed
-
-function incrementCounter(){
-    counter = counter + 1;
-    let displayText = 'Pressed ' + counter;
-    
-    if(counter === 1){
-        displayText = displayText + ' time';
-    }else {
-        displayText = displayText + ' times';
-    }
-    document.getElementById('display').innerHTML = displayText;
-}
+document.addEventListener('DOMContentLoaded', function(){
+    var card = document.getElementById('new_window');
+    card.addEventListener('click', function() {
+    var newWindow = window.open(URL,'https://docs.github.com/en/get-started/start-your-journey/hello-world', 'weight = 800, height = 600');})
+})

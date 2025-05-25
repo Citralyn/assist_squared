@@ -22,6 +22,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* This ensures the container takes up at least the full viewport height */
+  align-items: center;
 }
 
 .page_header {
@@ -169,4 +170,29 @@ p {
     .content-sections {
         padding: 1.5rem;
     }
+}
+
+.submit_button{
+    background-color: #383C87;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    margin: 1px;
+    text-align: center;
+}
+
+.submit_button:hover {
+    background-color: #0032D7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.submit_button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
