@@ -125,12 +125,21 @@ const findArticulation = async () => {
 
     if (!sending || sending.noArticulationReason !== null) continue;
 
-    const sendingItems = sending.items?.[0]?.items || [];
+    const sendingItemsArray = sending.items || [];
 
-    const matchFound = sendingItems.some(item =>
-      item.courseNumber?.toLowerCase() === courseNumber.toLowerCase() &&
-      item.prefix?.toLowerCase() === prefix.toLowerCase()
-    );
+    let matchFound = false;
+
+    for (let group of sendingItemsArray) {
+      const groupItems = group.items || [];
+
+      if (groupItems.some(item =>
+        item.courseNumber?.toLowerCase() === courseNumber.toLowerCase() &&
+        item.prefix?.toLowerCase() === prefix.toLowerCase()
+      )) {
+        matchFound = true;
+        break; // no need to check other groups if match found
+      }
+    }
 
     if (!matchFound) continue;
 
@@ -172,18 +181,17 @@ const findArticulation = async () => {
         }
       }
 
-
-
       const newCard = {
-  title: fullTitle,
-  description
-};
+        title: fullTitle,
+        description
+      };
 
-// Avoid adding duplicates
-setCards(prev => {
-  const exists = prev.some(card => card.title === newCard.title);
-  return exists ? prev : [...prev, newCard];
-});
+      // Avoid adding duplicates
+      setCards(prev => {
+        const exists = prev.some(card => card.title === newCard.title);
+        return exists ? prev : [...prev, newCard];
+      });
+
       found = true;
     }
   }
@@ -192,6 +200,7 @@ setCards(prev => {
     alert("No valid articulation found for entered course");
   }
 };
+
 
   return (
     <div style={{ padding: 20 }}>
