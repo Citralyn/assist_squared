@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useCardContext } from '../context/CardContext.jsx';
+
 
 import collegeList from "../data/college.js";
 import collegeMap from "../data/collegeMapping.js";
@@ -73,7 +75,8 @@ const Assist = () => {
 
   const [courseNumber, setCourseNumber] = useState('');
   const [prefix, setPrefix] = useState('');
-  const [cards, setCards] = useState([]);
+  
+const { cards, setCards } = useCardContext();
 
   const handleCollegeSelect = async (name) => {
     setCollegeName(name);
@@ -107,68 +110,88 @@ const Assist = () => {
     setMajorKey(match.key);
   };
 
-  const findArticulation = async () => {
-    if (!majorKey || !courseNumber || !prefix) return;
+const findArticulation = async () => {
+  if (!majorKey || !courseNumber || !prefix) return;
 
-    const res = await fetch(`http://localhost:3000/api/articulation/Agreements?key=${majorKey}`);
-    const data = await res.json();
-    const articulations = JSON.parse(data.result.articulations || "[]");
+  const res = await fetch(`http://localhost:3000/api/articulation/Agreements?key=${majorKey}`);
+  const data = await res.json();
+  const articulations = JSON.parse(data.result.articulations || "[]");
 
-    console.log(res);
-    console.log(data); 
-    console.log(articulations); 
+  let found = false;
 
-    for (let articulation of articulations) {
-        let art = articulation.articulation; 
-      const sending = art.sendingArticulation;
-      if (!sending || sending.noArticulationReason !== null) continue;
+  for (let articulation of articulations) {
+    const art = articulation.articulation;
+    const sending = art.sendingArticulation;
 
-      const sendingCourse = sending.items?.[0]?.items?.[0];
-      if (
-        sendingCourse?.courseNumber?.toLowerCase() === courseNumber.toLowerCase() &&
-        sendingCourse?.prefix?.toLowerCase() === prefix.toLowerCase()
-      ) {
-        const uciCourse = art.course;
-        const uciPrefix = uciCourse.prefix;
-        const uciCourseNumber = uciCourse.courseNumber;
-        const fullTitle = `${uciPrefix} ${uciCourseNumber}`;
+    if (!sending || sending.noArticulationReason !== null) continue;
 
-        console.log("COURSE: ")
-        console.log(fullTitle)
+    const sendingItems = sending.items?.[0]?.items || [];
 
-function normalizeTitle(str) {
-  return str.toLowerCase().replace(/\s+/g, ''); // remove all spaces, tabs, newlines
-}
+    const matchFound = sendingItems.some(item =>
+      item.courseNumber?.toLowerCase() === courseNumber.toLowerCase() &&
+      item.prefix?.toLowerCase() === prefix.toLowerCase()
+    );
 
-const rawFullTitle = `${uciPrefix}${uciCourseNumber}`;
-const normalizedFullTitle = normalizeTitle(rawFullTitle);
+    if (!matchFound) continue;
 
-let description = "No description found";
-for (let file of goalJsonFiles) {
-  const match = file.find(obj => {
-    const normalizedObjTitle = normalizeTitle(obj.title);
-    return normalizedObjTitle.startsWith(normalizedFullTitle);
-  });
-  if (match) {
-    description = match.description;
-    break;
-  }
-}
+    // Found a match — get all UCI course mappings
+    let uciCourses = [];
 
-
-
-        const newCard = {
-          title: fullTitle,
-          description
-        };
-
-        setCards(prev => [...prev, newCard]);
-        return;
+    if (art.type === "Course") {
+      const c = art.course;
+      if (c && c.courseNumber && c.prefix) {
+        uciCourses.push({ prefix: c.prefix, courseNumber: c.courseNumber });
+      }
+    } else if (art.type === "Series" && art.series?.courses?.length) {
+      for (let c of art.series.courses) {
+        if (c.courseNumber && c.prefix) {
+          uciCourses.push({ prefix: c.prefix, courseNumber: c.courseNumber });
+        }
       }
     }
 
+    for (let course of uciCourses) {
+      const fullTitle = `${course.prefix} ${course.courseNumber}`;
+      const rawFullTitle = `${course.prefix}${course.courseNumber}`;
+
+      function normalizeTitle(str) {
+        return str.toLowerCase().replace(/\s+/g, '');
+      }
+
+      const normalizedFullTitle = normalizeTitle(rawFullTitle);
+      let description = "No description found";
+
+      for (let file of goalJsonFiles) {
+        const match = file.find(obj => {
+          const normalizedObjTitle = normalizeTitle(obj.title);
+          return normalizedObjTitle.startsWith(normalizedFullTitle);
+        });
+        if (match) {
+          description = match.description;
+          break;
+        }
+      }
+
+
+
+      const newCard = {
+  title: fullTitle,
+  description
+};
+
+// Avoid adding duplicates
+setCards(prev => {
+  const exists = prev.some(card => card.title === newCard.title);
+  return exists ? prev : [...prev, newCard];
+});
+      found = true;
+    }
+  }
+
+  if (!found) {
     alert("No valid articulation found for entered course");
-  };
+  }
+};
 
   return (
     <div style={{ padding: 20 }}>
@@ -202,7 +225,7 @@ for (let file of goalJsonFiles) {
         ))}
       </div>
 
-      <button onClick={() => navigate('/')}>Confirm Choices</button>
+      <button onClick={() => navigate('/nextpage')}>Confirm Choices</button>
     </div>
   );
 };
