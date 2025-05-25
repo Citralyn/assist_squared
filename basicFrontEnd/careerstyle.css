@@ -1,0 +1,285 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: 
+        linear-gradient(217deg, rgb(243 8 102 / 80%), rgb(255 0 0 / 0%) 70.71%),
+        linear-gradient(130deg, rgb(23 32 90 / 80%), rgb(255 0 0 / 0%) 70.71%),
+        linear-gradient(127deg, rgb(23 32 90 / 80%), rgb(0 255 0 / 0%) 70.71%),
+        linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+
+h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 9rem;
+    font-weight: 700;
+}
+
+p { 
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+    line-height:1.6
+}
+
+.page_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* This ensures the container takes up at least the full viewport height */
+}
+
+.page_header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light grey background, adjust as needed */
+}
+
+.heading_container{
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    align-items: left;
+    left: 20px;
+    padding: 20px;
+    line-height: 1;
+}
+
+.container{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading_container{
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    align-items: left;
+    left: 20px;
+    padding: 20px;
+    line-height: 1;
+}
+
+.content{
+    background: pink;
+    width: 90%;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 32px 32px black;
+    max-width: 600px;
+}
+
+/* .carousel-container {
+	width: 100%;
+	max-width: 1200px;
+	height: 450px;
+	position: relative;
+	perspective: 1000px;
+	margin-top: 80px;
+} */
+
+.carousel-navigate{
+    width: 2000rem;
+    max-width: 1800px; /* Increased from 1600px */
+    height: 700px; /* Increased from 600px */
+    position: relative;
+    perspective: 2000px; /* Increased for more pronounced 3D effect */
+    margin: 0 auto 20px;
+}
+.carousel-container {
+    width: 100%;
+    max-width: 1600px; /* Increased from 1200px */
+    height: 600px; /* Increased from 450px */
+    position: relative;
+    perspective: 1500px; /* Increased from 1000px for a more pronounced 3D effect */
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto; /* Center the container horizontally */
+}
+
+.carousel-track {
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+    margin: 0;
+	transform-style: preserve-3d;
+	transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card {
+	position: absolute;
+	width: 800px;
+	height: 1000px;
+	background: white;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+	transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	cursor: pointer;
+    margin-top: 2px;
+}
+
+.card.center {
+	z-index: 10;
+	transform: translateZ(0);
+}
+
+.card.left-2 {
+	z-index: 1;
+	transform: translateX(-900px) scale(0.8) translateZ(-300px);
+	opacity: 0.7;
+}
+
+.card.left-1 {
+	z-index: 5;
+	transform: translateX(-500px) scale(0.9) translateZ(-100px);
+	opacity: 0.9;
+}
+
+.card.right-1 {
+	z-index: 5;
+	transform: translateX(500px) scale(0.9) translateZ(-100px);
+	opacity: 0.9;
+}
+
+.card.right-2 {
+	z-index: 1;
+	transform: translateX(900px) scale(0.8) translateZ(-300px);
+	opacity: 0.7;
+}
+
+.card.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: white;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.dot.active {
+	background: white;
+	transform: scale(1.2);
+}
+
+.nav-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(194, 197, 205, 0.6);
+	color: rgb(255, 255, 255);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 20;
+	transition: all 0.3s ease;
+	font-size: 1.5rem;
+	border: none;
+	outline: none;
+	padding-bottom: 4px;
+}
+
+.nav-arrow:hover {
+	background: white;
+	transform: translateY(-50%) scale(1.1);
+}
+
+.nav-arrow.left {
+	left: -400px;
+}
+
+.nav-arrow.right {
+	right: -400px;
+}
+
+@media (max-width: 768px) {
+	.about-title {
+		font-size: 4.5rem;
+	}
+
+	.card {
+		width: 200px;
+		height: 280px;
+	}
+
+	.card.left-2 {
+		transform: translateX(-250px) scale(0.8) translateZ(-300px);
+	}
+
+	.card.left-1 {
+		transform: translateX(-120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right-1 {
+		transform: translateX(120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right-2 {
+		transform: translateX(250px) scale(0.8) translateZ(-300px);
+	}
+
+	.member-name {
+		font-size: 2rem;
+	}
+
+	.member-role {
+		font-size: 1.2rem;
+	}
+
+	.member-name::before,
+	.member-name::after {
+		width: 50px;
+	}
+
+	.member-name::before {
+		left: -70px;
+	}
+
+	.member-name::after {
+		right: -70px;
+	}
+}
+
+.anteater {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
