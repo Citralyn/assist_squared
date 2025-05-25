@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white;
+}
+
+h1 {
+    padding-bottom: 1rem;
+}

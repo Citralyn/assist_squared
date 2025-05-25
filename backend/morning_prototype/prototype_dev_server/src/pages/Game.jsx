@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import quizletMapping from "../data/quizletMapping.js";
+import styles from '../../styles/Game.module.css';
 
 const Game = () => {
   const location = useLocation();
@@ -51,8 +52,12 @@ const Game = () => {
   };
 
   return (
-    <div>
-      <h2>Assessing {currentCourse} knowledge</h2>
+    <>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+    <div className={styles.container}>
+      <h1>Assessing {currentCourse} knowledge</h1>
       <iframe
         src={gameLink}
         height="500"
@@ -60,7 +65,7 @@ const Game = () => {
         style={{ border: 0 }}
         title={currentCourse}
       />
-      <button onClick={handleDoneClick}>Done With Quiz</button>
+      <button onClick={handleDoneClick} className={styles.button}>Done With Quiz</button>
 
       {showModal && (
         <div style={{ backgroundColor: '#000000a0', position: 'fixed', top: 0, left: 0, right: 0, bottom: 0 }}>
@@ -75,11 +80,12 @@ const Game = () => {
                 max="100"
               />
             </label>
-            <button onClick={handleModalSubmit}>Submit</button>
+            <button onClick={handleModalSubmit} className={styles.submitButton}>Submit</button>
           </div>
         </div>
       )}
     </div>
+    </>
   );
 };
 

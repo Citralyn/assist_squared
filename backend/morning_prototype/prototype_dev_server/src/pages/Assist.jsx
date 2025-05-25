@@ -225,14 +225,14 @@ const findArticulation = async () => {
       <p>{majorMsg}</p>
       <div className={styles.CourseInfo}>
         <div>
-          <h2>Enter Course Info</h2>
+          <h2>Enter Former Course Info</h2>
           <input placeholder="Prefix" value={prefix} onChange={e => setPrefix(e.target.value)} />
           <input placeholder="Course Number" value={courseNumber} onChange={e => setCourseNumber(e.target.value)} />
         </div>
         <button onClick={findArticulation} className={styles.UCIButton}>Find UCI Equivalent</button>
       </div>
 
-      <h2>Course Cards</h2>
+      <h2>Core Courses at UCI</h2>
       <div className={styles.cardContain}>
         {cards.map((card, idx) => (
           <div key={idx} style={{ border: '1px solid white', padding: 10, margin: 10 }}>
