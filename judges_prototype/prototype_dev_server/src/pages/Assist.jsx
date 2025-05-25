@@ -89,7 +89,7 @@ const { cards, setCards } = useCardContext();
     const id = collegeMap[name];
     setCollegeId(id);
 
-    const res = await fetch(`http://localhost:3000/api/agreements?receivingInstitutionId=120&sendingInstitutionId=${id}&academicYearId=75&categoryCode=major`);
+    const res = await fetch(`https://assist-backend-uysj.onrender.com/api/agreements?receivingInstitutionId=120&sendingInstitutionId=${id}&academicYearId=75&categoryCode=major`);
     const data = await res.json();
     setReports(data.reports || []);
   };
@@ -114,7 +114,7 @@ const { cards, setCards } = useCardContext();
 const findArticulation = async () => {
   if (!majorKey || !courseNumber || !prefix) return;
 
-  const res = await fetch(`http://localhost:3000/api/articulation/Agreements?key=${majorKey}`);
+  const res = await fetch(`https://assist-backend-uysj.onrender.com/api/articulation/Agreements?key=${majorKey}`);
   const data = await res.json();
   const articulations = JSON.parse(data.result.articulations || "[]");
 

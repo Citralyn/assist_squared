@@ -8,6 +8,10 @@ const PORT = 3000;
 
 app.use(cors()); // Allow all origins for dev (restrict in prod)
 
+app.use(cors({
+    origin: "https://assist-squared.netlify.app"
+}))
+
 // Proxy agreements API
 app.get('/api/agreements', async (req, res) => {
   const { sendingInstitutionId } = req.query;
