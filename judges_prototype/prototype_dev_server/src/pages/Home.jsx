@@ -18,13 +18,13 @@ const navigate = useNavigate();
     <div className={styles.buttonContainer}>
       <div className={styles.buttonContain}>
         <button onClick={() => navigate('/assist')} className={styles.assistButton}>
-          Assist <img src="public/arrow-up.svg" alt="cursor pointing up icon" width={32} height={32}/>
+          Assist <img src="arrow-up.svg" alt="cursor pointing up icon" width={32} height={32}/>
         </button>
         
       </div>
       <div className={styles.buttonContain}>
         <button onClick={() => navigate('/peter')} className={styles.peterButton}>
-          Resources <img src="public/resource.svg" alt="bookmark icon" width={32} height={32}/>
+          Resources <img src="resource.svg" alt="bookmark icon" width={32} height={32}/>
         </button>
       </div>
     </div>
