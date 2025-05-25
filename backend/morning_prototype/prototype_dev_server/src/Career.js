@@ -4,8 +4,12 @@
 - career website
 */
 import puppeteer from 'puppeteer';
+import fs from 'fs'
 
-(async () => {
+
+/* Scrape the UCI Division of Career and Pathways (DCP) for events and resources */
+
+async function makeFile (){
     /* launch browser to open page */
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
@@ -25,7 +29,15 @@ import puppeteer from 'puppeteer';
     ]);
 
     /* get all page content from search query */
-    console.log(await page.content());
+    // console.log(await page.content());
+    var pgContent = await page.content();
+
+    fs.writeFile("output.txt", pgContent, (err) => {
+        /* error catching */
+        if (err) throw err;
+    })
 
     await browser.close();
-})();
+};
+
+makeFile();
