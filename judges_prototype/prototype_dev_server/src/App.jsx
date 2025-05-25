@@ -8,6 +8,8 @@ import Resources from './pages/Resources.jsx';
 import NextPage from './pages/NextPage';
 import Game from './pages/Game';
 import Results from './pages/Results';
+import Events from './pages/Events';
+import Career from './pages/Career';
 
 import './App.css'
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="nextpage" element={<NextPage />} />
           <Route path="gamepage" element={<Game/>}/>
           <Route path="results" element={<Results />} />
+          <Route path="events" element={<Events />} />
+          <Route path="career" element={<Career />} />
         </Route>
       </Routes>
 
