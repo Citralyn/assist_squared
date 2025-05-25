@@ -15,10 +15,19 @@ const navigate = useNavigate();
         <h1 className={styles.welcomeText}>👋 Hi there,</h1>
         <h2 className={styles.heroText}>ICS Transfer Student!</h2>
         <p>Want to prepare for your courses and career? Assess your knowledge and supplement your learning!</p>
-    </div>
     <div className={styles.buttonContainer}>
-      <button onClick={() => navigate('/assist')} className={styles.assistButton}>Assist</button>
-      <button onClick={() => navigate('/peter')} className={styles.peterButton}>Resources</button>
+      <div className={styles.buttonContain}>
+        <button onClick={() => navigate('/assist')} className={styles.assistButton}>
+          Assist <img src="public/arrow-up.svg" alt="cursor pointing up icon" width={32} height={32}/>
+        </button>
+        
+      </div>
+      <div className={styles.buttonContain}>
+        <button onClick={() => navigate('/peter')} className={styles.peterButton}>
+          Resources <img src="public/resource.svg" alt="bookmark icon" width={32} height={32}/>
+        </button>
+      </div>
+    </div>
     </div>
     </>
   )
