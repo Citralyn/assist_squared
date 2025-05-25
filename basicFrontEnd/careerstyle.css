@@ -84,8 +84,7 @@ p {
 }
 
 .content{
-    background: pink;
-    width: 90%;
+    width: 100%;
     padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 32px 32px black;
