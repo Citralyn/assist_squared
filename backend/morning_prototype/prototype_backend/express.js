@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const puppeteer = require('puppeteer');
+const { JSDOM } = require('jsdom');
 
 const app = express();
 const PORT = 3000;
@@ -46,6 +48,72 @@ app.get('/api/articulation/Agreements', async (req, res) => {
   } catch (err) {
     console.error('Fetch error:', err);
     res.status(500).json({ error: 'Error fetching articulation' });
+  }
+});
+
+// Return data API
+app.get('/api/resources', async (req, res) => {
+  try {
+    console.log(`hello`);
+    const browser = await puppeteer.launch({headless:false});
+    const page = await browser.newPage();
+
+          /* nav page to url */
+    await page.goto('https://career.uci.edu/');
+
+    /* screen size */
+    await page.setViewport({width: 1080, height: 1024});
+
+    /* type into search box */
+    await page.click('a[aria-label="Search Icon Link"');
+    await page.type('.is-search-form', 'computer science');
+    await Promise.all ([
+        await page.click(".is-search-submit"),
+        page.waitForNavigation({ waitUntil: 'networkidle0'})
+    ]);
+
+    /* get all page content from search query */
+    // console.log(await page.content());
+    var pgContent = await page.content();
+
+    // fs.writeFile("output.txt", pgContent, (err) => {
+    //     /* error catching */
+    //     if (err) throw err;
+    // })
+
+    await browser.close();
+
+    /* start creating data */
+    const data = pgContent;
+
+    const dom = new JSDOM(pgContent);
+    const doc = dom.window.document;
+    const titles = doc.querySelectorAll('h2.fl-post-title');
+    // var urls = '';
+    // var descriptions = '';
+
+    for (let title of titles) {
+      // urls += title.querySelectorAll('a');
+      // descriptions += title.querySelectorAll('p');
+      console.log(title.textContent);
+    }
+
+    // for (let url of urls) {
+    //   console.log(url.textContent);
+    // }
+
+    // for (let desc of descriptions) {
+    //   console.log(desc.textContent);
+    // }
+
+    // console.log(urls.textContent);
+    // console.log(description.textContent);
+    
+    res.json(data)
+
+  } catch (err) {
+    console.error('Fetch error:', err);
+    res.status(500).json({ error: 'Error fetching career page content' });
   }
 });
 
