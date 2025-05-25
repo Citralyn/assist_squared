@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid white;
+    width: 100vw;
+}
+
+.navItem {
+    margin: 0 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.logo {
+    margin-left: 2rem;
+    margin-right: 0.25rem;
+}
+
+.logoContain {
+    align-items: center;
+    display: flex;
+}
