@@ -34,9 +34,10 @@ p {
 }
 
 .page_container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* This ensures the container takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This ensures the container takes up at least the full viewport height */
+    align-items: center;
 }
 
 .page_header {
@@ -51,7 +52,7 @@ p {
 }
 
 .heading_container{
-    margin-top: 100px;
+    margin-top: 1rem;
     padding: 20px;
     text-align: center;
     align-items: center;
