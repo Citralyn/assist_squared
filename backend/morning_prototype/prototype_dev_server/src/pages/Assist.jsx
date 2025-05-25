@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCardContext } from '../context/CardContext.jsx';
+import styles from '../../styles/Assist.module.css';
 
 
 import collegeList from "../data/college.js";
@@ -203,7 +204,11 @@ const findArticulation = async () => {
 
 
   return (
-    <div style={{ padding: 20 }}>
+    <>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+    <div className={styles.container}>
       <h1>Select College & Major</h1>
       <InputWithDropdown
         label="College"
@@ -218,24 +223,28 @@ const findArticulation = async () => {
         onSelect={handleMajorSelect}
       />
       <p>{majorMsg}</p>
-
-      <h2>Enter Course Info</h2>
-      <input placeholder="Prefix" value={prefix} onChange={e => setPrefix(e.target.value)} />
-      <input placeholder="Course Number" value={courseNumber} onChange={e => setCourseNumber(e.target.value)} />
-      <button onClick={findArticulation}>Find UCI Equivalent</button>
+      <div className={styles.CourseInfo}>
+        <div>
+          <h2>Enter Course Info</h2>
+          <input placeholder="Prefix" value={prefix} onChange={e => setPrefix(e.target.value)} />
+          <input placeholder="Course Number" value={courseNumber} onChange={e => setCourseNumber(e.target.value)} />
+        </div>
+        <button onClick={findArticulation} className={styles.UCIButton}>Find UCI Equivalent</button>
+      </div>
 
       <h2>Course Cards</h2>
-      <div>
+      <div className={styles.cardContain}>
         {cards.map((card, idx) => (
-          <div key={idx} style={{ border: '1px solid black', padding: 10, margin: 10 }}>
+          <div key={idx} style={{ border: '1px solid white', padding: 10, margin: 10 }}>
             <h3>{card.title}</h3>
             <p>{card.description}</p>
           </div>
         ))}
       </div>
 
-      <button onClick={() => navigate('/nextpage')}>Confirm Choices</button>
+      <button onClick={() => navigate('/nextpage')} className={styles.ConfirmButton}>Confirm Choices</button>
     </div>
+    </>
   );
 };
 
