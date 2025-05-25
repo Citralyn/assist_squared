@@ -1,0 +1,30 @@
+.btn-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.container {
+    color: white;
+    padding: 4rem;
+    text-align: center;
+}
