@@ -4,7 +4,7 @@ import NavBar from './components/NavBar.jsx';
 
 import Home from './pages/Home.jsx';
 import Assist from './pages/Assist';
-import Peter from './pages/Peter';
+import Resources from './pages/Resources.jsx';
 import NextPage from './pages/NextPage';
 import Game from './pages/Game';
 import Results from './pages/Results';
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
           <Route path="assist" element={<Assist />} />
-          <Route path="peter" element={<Peter />} />
+          <Route path="resources" element={<Resources />} />
           <Route path="nextpage" element={<NextPage />} />
           <Route path="gamepage" element={<Game/>}/>
           <Route path="results" element={<Results />} />

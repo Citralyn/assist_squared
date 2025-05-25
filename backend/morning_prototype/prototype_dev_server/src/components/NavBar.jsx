@@ -17,7 +17,7 @@ export default function NavBar() {
         <Navbar.Collapse id="offcanvasNavbar-expand-${expand}">
           <Nav style={{float: "right", padding: 12, }}>
             <Nav.Link className='text-light' href="/assist">Assist</Nav.Link>
-            <Nav.Link className='text-light' href="/peter">Resources</Nav.Link>
+            <Nav.Link className='text-light' href="/resources">Resources</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
