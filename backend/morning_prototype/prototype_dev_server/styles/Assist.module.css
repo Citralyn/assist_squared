@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
-    color: white;
 }
 
 body {
@@ -23,6 +22,7 @@ p {
     width: 90vw;
     margin-top: 6rem;
     padding: 0 4rem;
+    color: white;
 }
 
 /* UCI Button */
