@@ -6,6 +6,8 @@ import Home from './pages/Home.jsx';
 import Assist from './pages/Assist';
 import Peter from './pages/Peter';
 import NextPage from './pages/NextPage';
+import Game from './pages/Game';
+import Results from './pages/Results';
 
 import './App.css'
 
@@ -18,6 +20,8 @@ function App() {
           <Route path="assist" element={<Assist />} />
           <Route path="peter" element={<Peter />} />
           <Route path="nextpage" element={<NextPage />} />
+          <Route path="gamepage" element={<Game/>}/>
+          <Route path="results" element={<Results />} />
         </Route>
       </Routes>
 
