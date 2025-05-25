@@ -1,0 +1,214 @@
+[
+  {
+    "title": "STATS 5.  Seminar in Data Science.  1 Unit.",
+    "description": "An introduction to the field of Data Science; intended for entering freshman and transfers.\nGrading Option: Pass/no pass only.\nRestriction: Information Computer Science Majors only."
+  },
+  {
+    "title": "STATS 6.  Introduction to Data Science.  4 Units.",
+    "description": "Introduces the full data cycle. Topics include data collection and retrieval, data cleaning, exploratory analysis and visualization, introduction to statistical modeling, inference, and communicating findings. Applications include real data from a wide-range of fields with emphasis on understanding reproducible practices.\n(Vb)"
+  },
+  {
+    "title": "STATS 7.  Basic Statistics.  4 Units.",
+    "description": "Introduces basic inferential statistics including confidence intervals and hypothesis testing on means and proportions, t-distribution, Chi Square, regression and correlation. F-distribution and nonparametric statistics included if time permits.\nOverlaps with STATS 8, MGMT 7, SOCECOL 13.\nRestriction: STATS 7 may not be taken for credit concurrently with or after STATS 110, STATS 111, STATS 112.\n(Va)"
+  },
+  {
+    "title": "STATS 8.  Introduction to Biological Statistics .  4 Units.",
+    "description": "Introductory statistical techniques used to collect and analyze experimental and observational data from health sciences and biology. Includes exploration of data, probability and sampling distributions, basic statistical inference for means and proportions, linear regression, and analysis of variance.\nOverlaps with SOCECOL 13, MGMT 7, STATS 7.\nRestriction: STATS 8 may not be taken for credit concurrently with or after STATS 110, STATS 111, STATS 112.\n(Va)"
+  },
+  {
+    "title": "STATS 67.  Introduction to Probability and Statistics for Computer Science.  4 Units.",
+    "description": "Introduction to the basic concepts of probability and statistics with discussion of applications to computer science.\nPrerequisite: MATH 2B\n\nRestriction: School of Info & Computer Sci students have first consideration for enrollment. Computer Science Engineering Majors have first consideration for enrollment. STATS 67 may not be taken for credit concurrently with or after STATS 120B. \n(Va)"
+  },
+  {
+    "title": "STATS 68.  Statistical Computing and Exploratory Data Analysis.  4 Units.",
+    "description": "Introduces key concepts in statistical computing. Techniques such as exploratory data analysis, data visualization, simulation, and optimization methods, are presented in the context of data analysis within a statistical computing environment.\nPrerequisite: STATS 7 and (I&C SCI 31 or I&C SCI 32A)"
+  },
+  {
+    "title": "STATS 110.  Statistical Methods for Data Analysis I.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing data from experiments and surveys. Methods covered include two-sample procedures, analysis of variance, simple and multiple linear regression.\nPrerequisite: STATS 7 or STATS 8 or AP Statistics or (STATS 120A and STATS 120B and STATS 120C). AP Statistics with a minimum score of 3\n\nRestriction: School of Info & Computer Sci students only."
+  },
+  {
+    "title": "STATS 111.  Statistical Methods for Data Analysis II.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing data from surveys or experiments. Emphasizes application and understanding of methods for categorical data including contingency tables, logistic and Poisson regression, loglinear models.\nPrerequisite: STATS 110\n\nConcurrent with STATS 202."
+  },
+  {
+    "title": "STATS 112.  Statistical Methods for Data Analysis III.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing longitudinal data from experiments and cohort studies. Topics covered include survival methods for censored time-to-event data, linear mixed models, non-linear mixed effects models, and generalized estimating equations.\nPrerequisite: STATS 111\n\nConcurrent with STATS 203."
+  },
+  {
+    "title": "STATS 115.  Introduction to Bayesian Data Analysis.  4 Units.",
+    "description": "Basic Bayesian concepts and methods with emphasis on data analysis. Prior and posterior probability distributions, modeling, and Markov Chain Monte Carlo techniques are presented in the context of data analysis within a statistical computing environment.\nPrerequisite: STATS 120C. Recommended: STATS 110."
+  },
+  {
+    "title": "STATS 120A.  Introduction to Probability and Statistics I.  4 Units.",
+    "description": "Introduction to basic principles of probability and statistical inference. Axiomatic definition of probability, random variables, probability distributions, expectation.\nPrerequisite: MATH 2A and MATH 2B and (MATH 2D or MATH 4)\n\nRestriction: Data Science Majors have first consideration for enrollment. Quantitative Economics majors have second consideration.\nConcurrent with STATS 281A."
+  },
+  {
+    "title": "STATS 120B.  Introduction to Probability and Statistics II.  4 Units.",
+    "description": "Introduction to basic principles of probability and statistical inference. Point estimation, interval estimating, and testing hypotheses, Bayesian approaches to inference.\nPrerequisite: STATS 120A\n\nRestriction: Data Science Majors have first consideration for enrollment. Quantitative Economics majors have second consideration.\nConcurrent with STATS 281B."
+  },
+  {
+    "title": "STATS 120C.  Introduction to Probability and Statistics III.  4 Units.",
+    "description": "Introduction to basic principles of probability and statistical inference. Linear regression, analysis or variance, model checking.\nPrerequisite: STATS 120B and (MATH 3A or MATH 6G or I&C SCI 6N)\n\nRestriction: Data Science Majors have first consideration for enrollment. Quantitative Economics majors have second consideration.\nConcurrent with STATS 281C."
+  },
+  {
+    "title": "STATS 140.  Multivariate Statistical Methods.  4 Units.",
+    "description": "Theory and application of multivariate statistical methods. Topics include statistical inference for the multivariate normal model and its extensions to multiple samples and regression, use of statistical packages for data visualization and reduction, discriminant analysis, cluster analysis, and factor analysis.\nPrerequisite: STATS 120C and (MATH 3A or I&C SCI 6N)\n\nConcurrent with STATS 240."
+  },
+  {
+    "title": "STATS 170A.  Project in Data Science I.  4 Units.",
+    "description": "Problem definition and analysis, data representation, algorithm selection, solution validation, and results presentation. Students do team projects and lectures cover analysis alternatives, project planning, and data analysis issues. First quarter emphasizes approach selection, project planning, and experimental design.\nCorequisite: STATS 111\nPrerequisite: STATS 68 and IN4MATX 43 and COMPSCI 122A and COMPSCI 178 and I&C SCI 46 and STATS 111\n\nGrading Option: In Progress (Letter Grade with P/NP).\nRestriction: Seniors only. Data Science Majors have first consideration for enrollment."
+  },
+  {
+    "title": "STATS 170B.  Project in Data Science II.  4 Units.",
+    "description": "Problem definition and analysis, data representation, algorithm selection, solution validation, and results presentation. Students do team projects and lectures cover analysis alternatives, project planning, and data analysis issues. Second quarter emphasizes project execution and analysis, and presentation of results.\nCorequisite: STATS 112\nPrerequisite: STATS 170A and STATS 112. In Progress (IP) grade for STATS 170A is also accepted.\n\nRestriction: Seniors only. Data Science Majors have first consideration for enrollment."
+  },
+  {
+    "title": "STATS 199.  Individual Study.  2-5 Units.",
+    "description": "Individual research or investigations under the direction of an individual faculty member.\nRepeatability: May be repeated for credit unlimited times."
+  },
+  {
+    "title": "STATS 200A.  Intermediate Probability and Statistical Theory.  4 Units.",
+    "description": "Basics of probability theory, random variables and basic transformations, univariate distributions—discrete and continuous, multivariate distributions.\nPrerequisite: STATS 120C. STATS 120C with a grade of B- or better"
+  },
+  {
+    "title": "STATS 200B.  Intermediate Probability and Statistical Theory.  4 Units.",
+    "description": "Random samples, transformations, limit laws, normal distribution theory, introduction to stochastic processes, data reduction, point estimation (maximum likelihood).\nPrerequisite: STATS 200A. STATS 200A with a grade of B- or better"
+  },
+  {
+    "title": "STATS 200C.  Intermediate Probability and Statistical Theory.  4 Units.",
+    "description": "Interval estimation, hypothesis testing, decision theory and Bayesian inference, basic linear model theory.\nPrerequisite: STATS 200B. STATS 200B with a grade of B- or better"
+  },
+  {
+    "title": "STATS 201.  Statistical Methods for Data Analysis I.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing data from experiments and surveys. Methods covered include two-sample procedures, analysis of variance, simple and multiple linear regression.\nPrerequisite: STATS 7 or STATS 8\n\nRestriction: STATS 201 cannot be taken for credit after taking STATS 210."
+  },
+  {
+    "title": "STATS 202.  Statistical Methods for Data Analysis II.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing data from surveys or experiments. Emphasizes application and understanding of methods for categorical data including contingency tables, logistic and Poisson regression, loglinear models.\nPrerequisite: STATS 201 or STATS 210. STATS 201 with a grade of B- or better. STATS 210 with a grade of B- or better\n\nConcurrent with STATS 111."
+  },
+  {
+    "title": "STATS 203.  Statistical Methods for Data Analysis III.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing longitudinal data from experiments and cohort studies. Topics covered include survival methods for censored time-to-event data, linear mixed models, non-linear mixed effects models, and generalized estimating equations.\nPrerequisite: STATS 202. STATS 202 with a grade of B- or better\n\nConcurrent with STATS 112."
+  },
+  {
+    "title": "STATS 205.  Introduction to Bayesian Data Analysis.  4 Units.",
+    "description": "Basic Bayesian concepts and methods with emphasis on data analysis.  Special emphasis on specification of prior distributions.  Development for one-two samples and on to binary, Poisson and linear regression.  Analyses performed using free OpenBugs software.\nPrerequisite: STATS 120C. Recommended: STATS 201 or STATS 210."
+  },
+  {
+    "title": "STATS 205P.  Bayesian Data Analysis.  4 Units.",
+    "description": "Covers basic Bayesian concepts and methods with emphasis on data analysis. Special emphasis on specification of prior distributions. Development of methods and theory for one and two samples, binary, Poisson, and linear regression.\nPrerequisite: DATA 200AP and DATA 200BP and DATA 210P. DATA 200AP with a grade of B or better. DATA 200BP with a grade of B or better. DATA 210P with a grade of B or better\n\nRestriction: Graduate students only. Master of Data Science Degree students only."
+  },
+  {
+    "title": "STATS 210.  Statistical Methods I: Linear Models.  4 Units.",
+    "description": "Statistical methods for analyzing data from surveys and experiments. Topics include randomization and model-based inference, two-sample methods, analysis of variance, linear regression and model diagnostics.\nPrerequisite: Knowledge of basic statistics, calculus, linear algebra."
+  },
+  {
+    "title": "STATS 210A.  Statistical Methods I: Linear Models.  4 Units.",
+    "description": "Statistical methods for analyzing data from surveys and experiments. Topics include randomization and model-based inference, two-sample methods, analysis of variance, linear regression, and model diagnostics.\nPrerequisite:  Knowledge of basic statistics (at the level of STATS 7), calculus, and linear algebra.\n\nRestriction: Graduate students only."
+  },
+  {
+    "title": "STATS 210B.  Statistical Methods II: Categorical Data.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing discrete and non-normal outcomes. Emphasizes the development and application of methods for categorical data, including contingency tables, logistic and Poisson regression, loglinear models.\nPrerequisite: STATS 210. STATS 210 with a grade of B- or better. May not be taken for graduate credit by Ph.D. students in Statistics.\n\nRestriction: Graduate students only."
+  },
+  {
+    "title": "STATS 210C.  Statistical Methods III: Longitudinal Data.  4 Units.",
+    "description": "Introduction to statistical methods for analyzing longitudinal outcomes. Emphasizes the development and application of regression methods for correlated and censored outcomes. Methods for continuous and discrete correlated outcomes, as well as censored outcomes, are covered.\nPrerequisite: STATS 210B. STATS 210B with a grade of B- or better. May not be taken for graduate credit by Ph.D. students in Statistics.\n\nRestriction: Graduate students only."
+  },
+  {
+    "title": "STATS 211.  Statistical Methods II: Generalized Linear Models.  4 Units.",
+    "description": "Development of the theory and application of generalized linear models. Topics include likelihood estimation and asymptotic distributional theory for exponential families, quasi-likelihood and mixed model development. Emphasizes methodological development and application to real scientific problems.\nPrerequisite or corequisite: STATS 210. STATS 210 with a grade of B- or better"
+  },
+  {
+    "title": "STATS 212.  Statistical Methods III: Methods for Correlated Data.  4 Units.",
+    "description": "Development and application of statistical methods for analyzing corrected data. Topics covered include repeated measures ANOVA, linear mixed models, non-linear mixed effects models, and generalized estimating equations.  Emphasizes both theoretical development and application of the presented methodology.\nPrerequisite: STATS 211. STATS 211 with a grade of B- or better"
+  },
+  {
+    "title": "STATS 220A.  Advanced Probability and Statistics Topics.  4 Units.",
+    "description": "Advanced topics in probability and statistical inference including measure theoretic probability, large sample theory, decision theory, resampling and Monte Carlo methods, nonparametric methods.\nPrerequisite: STATS 200C. STATS 200C with a grade of B- or better"
+  },
+  {
+    "title": "STATS 220B.  Advanced Probability and Statistics Topics.  4 Units.",
+    "description": "Advanced topics in probability and statistical inference, including measure theoretic probability, large sample theory, decision theory, resampling and Monte Carlo methods, nonparametric methods.\nPrerequisite: STATS 220A and MATH 140B. STATS 220A with a grade of B- or better"
+  },
+  {
+    "title": "STATS 225.  Bayesian Statistical Analysis.  4 Units.",
+    "description": "Introduction to the Bayesian approach to statistical inference. Topics include univariate and multivariate models, choice of prior distributions, hierarchical models, computation including Markov chain Monte Carlo, model checking, and model selection.\nPrerequisite: STATS 205 and STATS 230. STATS 205 with a grade of B- or better. STATS 230 with a grade of B- or better"
+  },
+  {
+    "title": "STATS 230.  Statistical Computing Methods.  4 Units.",
+    "description": "Numerical computations and algorithms with applications in statistics. Topics include optimization methods including the EM algorithm, random number generation and simulation, Markov chain simulation tools, and numerical integration.\nPrerequisite: Two quarters of upper-division or graduate training in probability and statistics.\n\nOverlaps with COMPSCI 206."
+  },
+  {
+    "title": "STATS 240.  Multivariate Statistical Methods.  4 Units.",
+    "description": "Theory and application of multivariate statistical methods. Topics include statistical inference for the multivariate normal model and its extensions to multiple samples and regression, use of statistical packages for data visualization and reduction, discriminant analysis, cluster analysis, and factor analysis.\nPrerequisite: STATS 120C and (MATH 3A or I&C SCI 6N)\n\nConcurrent with STATS 140."
+  },
+  {
+    "title": "STATS 240P.  Multivariate Statistical Methods.  4 Units.",
+    "description": "Theory and application of multivariate statistical methods. Topics include statistical inference for the multivariate normal model and its extensions to multiple samples and regression, use of statistical packages for data visualization and dimension reduction, discriminant analysis, cluster analysis, factor analysis.\nPrerequisite: DATA 200AP and DATA 200BP. DATA 200AP with a grade of B- or better. DATA 200BP with a grade of B- or better\n\nRestriction: Graduate students only. Master of Data Science Degree students only."
+  },
+  {
+    "title": "STATS 245.  Time Series Analysis.  4 Units.",
+    "description": "Statistical models for analysis of time series from time and frequency domain perspectives. Emphasizes theory and application of time series data analysis methods. Topics include ARMA/ARIMA models, model identification/estimation, linear operators, Fourier analysis, spectral estimation, state space models, Kalman filter.\nCorequisite: STATS 200C\nPrerequisite or corequisite: STATS 201 or STATS 210. STATS 201 with a grade of B- or better. STATS 210 with a grade of B- or better"
+  },
+  {
+    "title": "STATS 245P.  Time Series Analysis.  4 Units.",
+    "description": "Statistical models for time series. Topics include linear models for trends; stationary time-series; non-stationary time series; forecasting and Kalman filtering; time-series smoothing; seasonal models; ARCH, GARCH and stochastic volatility models; multivariate time series; vector autoregressive models; spectral analysis; case studies.\nPrerequisite: DATA 200AP and DATA 200BP. DATA 200AP with a grade of B- or better. DATA 200BP with a grade of B- or better\n\nRestriction: Graduate students only. Master of Data Science Degree students only."
+  },
+  {
+    "title": "STATS 255.  Statistical Methods for Survival Data.  4 Units.",
+    "description": "Statistical methods for analyzing survival data from cohort studies. Topics include parametric and nonparametric methods, the Kaplan-Meier estimator, log-rank tests, regression models, the Cox proportional hazards model and accelerated failure time models, efficient sampling designs, discrete survival models.\nCorequisite: STATS 202 or STATS 211.\nPrerequisite: STATS 210. STATS 210 with a grade of B- or better\n\nRestriction: Graduate students only."
+  },
+  {
+    "title": "STATS 260.  Inference with Missing Data.  4 Units.",
+    "description": "Statistical methods and theory useful for analysis of multivariate data with partially observed variables. Bayesian and likelihood-based methods developed. Topics include EM-type algorithms, MCMC samplers, multiple imputation, and general location model. Applications from economics, education, and medicine are discussed.\nCorequisite: STATS 200C\nPrerequisite: STATS 210 or STATS 200C. STATS 230"
+  },
+  {
+    "title": "STATS 262P.  Theory and Practice of Sample Survey.  4 Units.",
+    "description": "Basic techniques and statistical methods for designing surveys and analyzing collected survey data. Topics include simple random sampling, ratio and regression estimates, stratified sampling, cluster sampling, sampling with unequal probabilities, multistage sampling, and methods to handle nonresponse.\nPrerequisite: DATA 200AP and DATA 200BP. DATA 200AP with a grade of B or better. DATA 200BP with a grade of B or better\n\nRestriction: Graduate students only. Master of Data Science Degree students only."
+  },
+  {
+    "title": "STATS 265.  Causal Inference.  4 Units.",
+    "description": "Various approaches to causal inference focusing on the Rubin causal model and propensity-score methods. Topics include randomized experiments, observational studies, non-compliance, ignorable and non-ignorable treatment assignment, instrumental variables, and sensitivity analysis. Applications from economics, politics, education, and medicine.\nPrerequisite: STATS 200C and STATS 210. STATS 200C with a grade of B- or better. STATS 210 with a grade of B- or better"
+  },
+  {
+    "title": "STATS 270.  Stochastic Processes.  4 Units.",
+    "description": "Introduction to the theory and application of stochastic processes. Topics include Markov chains, continuous-time Markov processes, Poisson processes, and Brownian motion. Applications include Markov chain Monte Carlo methods and financial modeling (for example, option pricing).\nPrerequisite: STATS 120C\n\nOverlaps with MATH 271A, MATH 271B, MATH 271C."
+  },
+  {
+    "title": "STATS 270P.  Stochastic Processes.  4 Units.",
+    "description": "Introduction to the theory and application of stochastic processes. Topics include Poisson processes, Markov chains, continuous-time Markov processes, and Brownian motion. Applications include Markov chain Monte Carlo methods and financial modeling (e.g. option pricing).\nPrerequisite: DATA 200AP and DATA 200BP. DATA 200AP with a grade of B or better. DATA 200BP with a grade of B or better\n\nRestriction: Graduate students only. Master of Data Science Degree students only."
+  },
+  {
+    "title": "STATS 275.  Statistical Consulting.  4 Units.",
+    "description": "Training in collaborative research and practical application of statistics. Emphasis on effective communication as it relates to identifying scientific objectives, formulating a statistical analysis plan, choice of statistical methods, and interpretation of results and their limitations to non-statisticians.\nPrerequisite: STATS 203 or STATS 212 or STATS 210C. STATS 203 with a grade of B or better. STATS 212 with a grade of B or better. STATS 210C with a grade of B or better\n\nRestriction: Graduate students only."
+  },
+  {
+    "title": "STATS 280.  Seminar in Statistics.  0.5 Units.",
+    "description": "Periodic seminar series covering topics of current research in statistics and its application.\nGrading Option: Satisfactory/unsatisfactory only.\nRepeatability: May be repeated for credit unlimited times.\nRestriction: Graduate students only."
+  },
+  {
+    "title": "STATS 281A.  Introduction to Probability and Statistics I.  4 Units.",
+    "description": "Introduction to basic principles of probability and statistical inference. Axiomatic definition of probability, random variables, probability distributions, expectation.\nRestriction: Graduate students only.\nConcurrent with STATS 120A."
+  },
+  {
+    "title": "STATS 281B.  Introduction to Probability and Statistics II.  4 Units.",
+    "description": "Introduction to basic principles of probability and statistical inference. Point estimation, interval estimating, and testing hypotheses, Bayesian approaches to inference.\nRestriction: Graduate students only.\nConcurrent with STATS 120B."
+  },
+  {
+    "title": "STATS 281C.  Introduction to Probability and Statistics III.  4 Units.",
+    "description": "Introduction to basic principles of probability and statistical inference. Contingency table analysis, linear regression, analysis of variance, model checking.\nRestriction: Graduate students only.\nConcurrent with STATS 120C."
+  },
+  {
+    "title": "STATS 295.  Special Topics in Statistics.  4 Units.",
+    "description": "Studies in selected areas of statistics. Topics addressed vary each quarter.\nRepeatability: Unlimited as topics vary."
+  },
+  {
+    "title": "STATS 298.  Thesis Supervision.  2-12 Units.",
+    "description": "Individual research or investigation conducted in preparation for the M.S. thesis option or the dissertation requirements for the Ph.D. program.\nRepeatability: May be repeated for credit unlimited times."
+  },
+  {
+    "title": "STATS 299.  Individual Study.  1-12 Units.",
+    "description": "Individual research or investigation under the direction of an individual faculty member.\nRepeatability: May be repeated for credit unlimited times."
+  }
+]
